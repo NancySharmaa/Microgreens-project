@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+  <form id="checkoutForm" action="https://formsubmit.co/haritaura8602@gmail.com" method="POST" autocomplete="off">
+    <h1>Checkout</h1>
+
+
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="text" name="phone" placeholder="Phone Number" required />
+    <textarea name="address" placeholder="Full Delivery Address" rows="4" required></textarea>
+
+
+    <input type="hidden" name="_next" value="https://zippy-croquembouche-18bb5e.netlify.app/thanku.html" />
+
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="order_summary" id="orderData" />
+
+    <div id="orderPreview" class="preview">Loading your order...</div>
+
+    <button type="submit">Place Order</button>
+  </form>
+
+  <script src="checkout.js"></script>
+</body>
+
+</html>
